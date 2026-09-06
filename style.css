@@ -8,11 +8,12 @@
   font-style: normal;
 }
 
-.fuzzy-bubbles-bold {
-  font-family: "Fuzzy Bubbles", sans-serif;
-  font-weight: 700;
+.short-stack-regular {
+  font-family: "Short Stack", cursive;
+  font-weight: 400;
   font-style: normal;
 }
+
 
   /*Headers*/
   .fuzzy-bubbles-regular {
@@ -21,11 +22,12 @@
   font-style: normal;
 }
 
-.fuzzy-bubbles-bold {
-  font-family: "Fuzzy Bubbles", sans-serif;
-  font-weight: 700;
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
   font-style: normal;
 }
+
 
   /*Colors*/
   /*Purple
@@ -45,35 +47,257 @@
   */
 
   body{
+    margin: 0;
+    background-color: #fff7fb;
+    color: #593c63;
+  }
 
+  .page-layout{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    width: 96%;
+    margin: auto;
   }
 
   header{
+    font-family: "Short Stack", cursive;
+    font-weight: 700;
+    text-align:center;
+    background-color: #cdb4db;
+    width: 100%;
+    padding: 24px;
+    margin: auto;
+    box-sizing: border-box;
+    border-bottom: 5px solid #ffafcc;
+  }
+   header h1{
+    font-size: 50px;
+    margin: 0;
+   }
 
+
+  main{
+    flex: 1 1 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 0;
+    height: auto;
+    padding: 24px;
+    background-color: #593c63;
+    border: 2px dashed #ffafcc;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0 #cdb4db;
+    box-sizing: border-box;
   }
 
-  .My-Profile{
-
+  #RightPicL{
+    flex: 0 0 24%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid #cdb4db;
+    border-radius: 16px;
+    box-sizing: border-box;
   }
 
-  .About-Me{
-
+  #RightPicL img{
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
   }
 
-  .My-Interests{
-
+  #RightPicL img:last-child{
+    margin-bottom: 0;
   }
 
-  .My-Projects{
-
+  /* Put the profile and information columns beside each other. */
+  .profile-layout{
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
   }
 
+  #My-Profile{
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid #cdb4db;
+    border-radius: 250px;
+    box-sizing: border-box;
+    text-align: center; 
+    height: 410px; 
+  }
+
+  #My-Profile img{
+    padding:10px;
+    max-width: 100%;
+    height: auto;
+   
+  }
+
+  .img-extra{
+    height: 10px;
+  }
+
+  #My-Profile h1{
+    font-size: 50px;
+    margin: 0;
+  }
+
+    #My-Profile h2{
+    font-size: 50px;
+    margin: 0;
+  }
+
+  /* Keep the four smaller sections in one vertical column. */
+  .info-sections{
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .About-Me,
+  .My-Projects,
   .Skills{
+    display: block;
+    padding: 30px;
+    background-color: #d9efff;
+    border-left: 5px solid #a2d2ff;
+    box-shadow: 3px 3px 0 white;
+    box-sizing: border-box;
+    color: #593c63;
+    text-decoration: none;
+  }
 
+  .About-Me h2,
+  .My-Projects h2,
+  .Skills h2{
+    font-family: "Chewy", system-ui;
+    text-align: center;
+    transform: scale(2);
+  }
+
+  .About-Me:hover,
+  .My-Projects:hover,
+  .Skills:hover{
+    transform: translateY(-3px);
+  }
+
+  .detail-sections{
+    margin-top: 32px;
+  }
+
+  .detail-section{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    min-height: 220px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid #cdb4db;
+    border-radius: 16px;
+    box-sizing: border-box;
+    scroll-margin-top: 20px;
+  }
+
+  .detail-section p{
+    font-size: 30px;
+
+  }
+
+  .detail-section h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+    color: #593c63;
+  }
+
+  .detail-section:last-child{
+    margin-bottom: 0;
+  }
+
+  .detail-section > div:last-child{
+    flex: 1;
+    text-align: center;
+  }
+
+  #my-projects-section h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .image-placeholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 180px;
+    height: 160px;
+    background-color: #fff0f6;
+    border: 3px dashed #ffafcc;
+    border-radius: 12px;
+    color: #593c63;
+    text-align: center;
+  }
+
+  @media (max-width: 700px){
+    .page-layout{
+      display: block;
+      width: 100%;
+    }
+
+    main{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #RightPicL{
+      width: 80%;
+      flex: none;
+      margin: 24px auto 20px;
+      padding: 10px;
+    }
+
+
+    .profile-layout{
+      display: block;
+    }
+
+    #My-Profile,
+    .info-sections{
+      width: 100%;
+    }
+
+    .info-sections{
+      margin-top: 24px;
+    }
+
+    .detail-section{
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .image-placeholder{
+      flex-basis: auto;
+      width: 100%;
+    }
   }
 
   footer{
-    
+    padding: 20px;
+    text-align: center;
+    color: #593c63;
+    background-color: #d9efff;
+    border-top: 3px dashed #a2d2ff;
   }
 
 

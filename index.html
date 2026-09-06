@@ -12,50 +12,73 @@
     <p>This is the header of my website.</p>
   </header>
 
-  <main>
-    <!-- This is where the main content of my website will go. -->
-    <section id="My-Profile">
-      <h2>My Profile</h2>
-      <img src="img/Shelseapfp.png" alt="My profile picture" width="200" height="200">
-      <p>This section will include my profile picture.</p>
-    </section>
+  <div class="page-layout">
+    <main>
+      <!-- This box holds the profile and the navigation buttons. -->
+      <div class="profile-box">
+        <div class="profile-layout">
+          <section id="My-Profile">
+            <img src="img/Shelseapfp.png" alt="My profile picture" width="400" height="400">
+          </section>
 
-    <!-- Beside the MyProfile Section-->
+          <!-- These buttons stack beside the profile. -->
+          <div class="info-sections">
+            <!--First: About me Section-->
+            <a class="info-button About-Me" href="#about-me-section">
+              <h2>About Me</h2>
+            </a>
 
-    <!--First: About me Section-->
-    <section>
-      <div class="About-Me">
-        <h2>About Me</h2>
-        <p>This is where I will write about myself.</p>
+            <!--Second: My Skills Section-->
+            <a class="info-button Skills" href="#skills-section">
+              <h2>Skills</h2>
+            </a>
+
+            <!--Third: My Projects Section-->
+            <a class="info-button My-Projects" href="#my-projects-section">
+              <h2>My Projects</h2>
+            </a>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <!--Second: My Interests Section-->
-    <section>
-      <div class="My-Interests">
-        <h2>My Interests</h2>
-        <p>This is where I will share my interests.</p>
+      <!-- This box holds the information for each button. -->
+      <div class="details-box">
+        <div class="detail-sections">
+          <section id="about-me-section" class="detail-section">
+            <div class="image-placeholder"><img src="img/cacau.jpeg" alt="My profile picture" width="120" height="120"></div>
+            <div>
+              <h2>About Me</h2>
+              <p>Illustrator || CITA UnderGrad @ COFC || <br> Game Developer || ARMY National Guard Specialist</p>
+            </div>
+          </section>
+
+          <section id="skills-section" class="detail-section">
+            <div class="image-placeholder"><img src="img/Shelchib3.png" alt="My profile picture" width="150" height="150"></div>
+            <div>
+              <h2>Skills</h2>
+              <p>ADOBE || UNITY || <br> JAVA || C# || WEB DEVELOPMENT <br>|| MICROSOFT || </p>
+            </div>
+          </section>
+
+          <section id="my-projects-section" class="detail-section">
+            <div class="image-placeholder"><img src="img/Shelchib1.png" alt="My profile picture" width="150" height="150"></div>
+            <div>
+              <h2>My Projects (@ the moment)</h2>
+              <p></p>
+            </div>
+          </section>
+        </div>
       </div>
-    </section>
+    </main>
 
-    <!--Third: My Projects Section-->
-    <section>
-      <div class="My-Projects">
-        <h2>My Projects</h2>
-        <p>This is where I will showcase my projects.</p>
-      </div>
-    </section>
-
-    <!--Fourth: Skills Section-->
-    <section>
-      <div class="Skills">
-        <h2>Skills</h2>
-        <p>This is where I will list my skills.</p>
-      </div>
-    </section>
-
-  <!--End of the Main Content Section-->
-  </main>
+    <!-- These images appear in the right column. -->
+    <div id="RightPicL">
+      <img src="img/scarabig.PNG" alt="Illustration of a person with dark blue hair">
+      <img src="img/v.PNG" alt="Illustration of v">
+      <img src="img/xiAO.png" alt="Illustration of a xiao">
+      <img src="img/scaralineart.PNG" alt="Illustration of scara">
+    </div>
+  </div>
 
   <!--Footer-->
   <footer>
