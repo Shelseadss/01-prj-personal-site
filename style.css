@@ -1,8 +1,8 @@
-/* Add you CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Short+Stack&display=swap');
 
 /*Fonts Used*/
-  /*HandWriting*/
-  .fuzzy-bubbles-regular {
+/*HandWriting*/
+.fuzzy-bubbles-regular {
   font-family: "Fuzzy Bubbles", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -14,19 +14,20 @@
   font-style: normal;
 }
 
-
-  /*Headers*/
-  .fuzzy-bubbles-regular {
-  font-family: "Fuzzy Bubbles", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+/*Headers*/
 .chewy-regular {
   font-family: "Chewy", system-ui;
   font-weight: 400;
   font-style: normal;
 }
+
+.boogaloo-regular {
+  font-family: "Boogaloo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 
   /*Colors*/
@@ -46,11 +47,13 @@
   #a2d2ff;
   */
 
-  body{
+body {
     margin: 0;
-    background-color: #fff7fb;
+    background-color: white;
     color: #593c63;
-  }
+    font-family: 'Short Stack', cursive;
+}
+
 
   .page-layout{
     display: flex;
@@ -61,20 +64,12 @@
   }
 
   header{
-    font-family: "Short Stack", cursive;
-    font-weight: 700;
-    text-align:center;
-    background-color: #cdb4db;
+    background-color: #c37d92;
     width: 100%;
     padding: 24px;
     margin: auto;
     box-sizing: border-box;
-    border-bottom: 5px solid #ffafcc;
   }
-   header h1{
-    font-size: 50px;
-    margin: 0;
-   }
 
 
   main{
@@ -84,19 +79,16 @@
     min-width: 0;
     height: auto;
     padding: 24px;
-    background-color: #593c63;
-    border: 2px dashed #ffafcc;
-    border-radius: 12px;
-    box-shadow: 8px 8px 0 #cdb4db;
+    background-color: white;
     box-sizing: border-box;
   }
 
   #RightPicL{
     flex: 0 0 24%;
-    margin-top: 20px;
+    margin-top: 130px;
     padding: 10px;
-    background-color: white;
-    border: 3px solid #cdb4db;
+    background-color: #aeb4a9;
+    border: 10px solid #aeb4a9;
     border-radius: 16px;
     box-sizing: border-box;
   }
@@ -114,6 +106,30 @@
     margin-bottom: 0;
   }
 
+  .profile-card{
+    margin: 30px;
+    padding: 20px;
+    height: auto;
+    background-color: lightgrey;
+    border-radius: 25px;
+  }
+
+
+  .name-box{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+  }
+
+  .name-box h1{
+    font-size: 60px;
+    margin: 0;
+  }
+
   /* Put the profile and information columns beside each other. */
   .profile-layout{
     display: flex;
@@ -124,16 +140,12 @@
   #My-Profile{
     width: 40%;
     padding: 10px;
-    background-color: white;
-    border: 3px solid #cdb4db;
-    border-radius: 250px;
     box-sizing: border-box;
     text-align: center; 
-    height: 410px; 
+    height: 310px; 
   }
 
   #My-Profile img{
-    padding:10px;
     max-width: 100%;
     height: auto;
    
@@ -155,38 +167,50 @@
 
   /* Keep the four smaller sections in one vertical column. */
   .info-sections{
-    width: 60%;
+    width: 50%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 25px;
   }
 
+  
   .About-Me,
   .My-Projects,
   .Skills{
     display: block;
-    padding: 30px;
-    background-color: #d9efff;
-    border-left: 5px solid #a2d2ff;
-    box-shadow: 3px 3px 0 white;
+    background-color: white;
     box-sizing: border-box;
     color: #593c63;
     text-decoration: none;
+    border-radius: 50px;
+    height: 80px;
   }
 
   .About-Me h2,
   .My-Projects h2,
   .Skills h2{
-    font-family: "Chewy", system-ui;
     text-align: center;
-    transform: scale(2);
+    transform: scale(1.5);
+    width: 180px;
+    margin: auto;
+    margin-top: 20px;
   }
 
   .About-Me:hover,
   .My-Projects:hover,
   .Skills:hover{
     transform: translateY(-3px);
+  }
+
+
+  .details-box{
+    background-color: #d89a9e;
+    border: 30px solid #d89a9e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:20px;
+    border-radius: 16px;
   }
 
   .detail-sections{
@@ -201,15 +225,18 @@
     margin-bottom: 20px;
     padding: 20px;
     background-color: white;
-    border: 3px solid #cdb4db;
     border-radius: 16px;
     box-sizing: border-box;
     scroll-margin-top: 20px;
   }
 
-  .detail-section p{
-    font-size: 30px;
+  #about-me-section, #skills-section, 
+  #my-projects-section{
+    border-radius: 25px;
+  }
 
+  .detail-section p, .detail-section a{
+    font-size: 30px;
   }
 
   .detail-section h2{
@@ -241,12 +268,10 @@
     justify-content: center;
     flex: 0 0 180px;
     height: 160px;
-    background-color: #fff0f6;
-    border: 3px dashed #ffafcc;
-    border-radius: 12px;
     color: #593c63;
     text-align: center;
   }
+
 
   @media (max-width: 700px){
     .page-layout{
@@ -261,7 +286,7 @@
     }
 
     #RightPicL{
-      width: 80%;
+      width: 100%;
       flex: none;
       margin: 24px auto 20px;
       padding: 10px;
@@ -294,10 +319,7 @@
 
   footer{
     padding: 20px;
-    text-align: center;
-    color: #593c63;
-    background-color: #d9efff;
-    border-top: 3px dashed #a2d2ff;
+    background-color: #c37d92;
   }
 
 
